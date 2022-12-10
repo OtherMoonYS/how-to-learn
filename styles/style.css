@@ -13,19 +13,126 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo__place_header {
+  min-width: 228px;
+  min-height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 6;
+}
+
+.title {
+  position: relative;
+  left: 64px;
+  z-index: 5;
+  width: 730px;
+  align-self: center;
+}
+
+.title__text {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 4;
+  width: 388px;
+}
+
+.subtitle__text {
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.header__main-illustration {
+  display: flex;
+  position: absolute;
+  background-image: url(/images/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 768px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.header__square-pic {
+  display: flex;
+  position: absolute;
+  background-color: #2f80ed;
+  width: 568px;
+  height: 568px;
+  top: 64px;
+  right: 0;
+  z-index: 2;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 100px;
+  border: 1px solid red;
+  width: 80%;
+  position: relative;
+}
+
+.brief {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 175px;
+  line-height: 1.2px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.main-text {
+  border: 1px solid red;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.paragraph {
+  border: 1px solid red;
+  min-width: 784px;
+  padding-bottom: 30px;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.paragraph:nth-child(2) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.span-accent {
+  border: 1px solid red;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
